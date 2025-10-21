@@ -33,6 +33,11 @@
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+var marker = L.marker([8.36014913617249, 124.86748353259433]).addTo(map);
+const dogeImage = "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDK_QVwZrQzGD0ehlmzcmIs1HiQ_8wrPThQ&s' class= 'popup-image' >";
+const popupContent =  `${dogeImage}<br><b>Hello world!</b><br>I am a popup.`  ;
+
+marker.bindPopup(popupContent).openPopup();
 
 </script>
 marker.bindPopup(popupContent).openPopup();
