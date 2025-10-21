@@ -15,11 +15,26 @@
      crossorigin=""></script>
 
      <style>
-        #map { height: 180px; }
+        #map { height: 500px; }
+         popup-image {
+            max-width: 200px;
+            height: auto;
+        }
      </style>
 </head>
 <body>
     <h1>Basic maps</h1>
      <div id="map"></div>
 </body>
+<script>
+   <script>
+    var map = L.map('map').setView([8.36014913617249, 124.86748353259433, 17]); 
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+</script>
+marker.bindPopup(popupContent).openPopup();
+</script>
 </html>
